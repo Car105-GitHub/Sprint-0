@@ -1,0 +1,9 @@
+body{
+    background-image: url("imagenes/cuadros-700px.jpg");
+}
+
+.secciones__inmo{
+        background-color: rgba(240, 240, 240, 0.747);
+        block-size: 100px;
+      }
+
