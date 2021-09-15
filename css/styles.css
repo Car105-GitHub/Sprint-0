@@ -8,6 +8,14 @@ body{
       }
 
 .seccion__ofertas{
-        background-color: rgba(240, 240, 240, 0.747;
-        block-size: 100px;
+       background-color: rgba(240, 240, 240, 0.747);
+       width: 1400px;
+       height: 500px;
       }      
+
+.nombre__seccion{
+        padding: 30px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
