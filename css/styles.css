@@ -18,6 +18,20 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-
-        
 }
+
+.menu__temporal{
+        padding: 50px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.boton__imagenes{
+        background-image:url('index.html');
+        background-repeat:no-repeat;
+        /* height:60px;
+        width:400px;
+        background-size: 50px 50px; */
+        background-position:center;
+    }
