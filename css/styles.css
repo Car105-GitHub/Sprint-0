@@ -14,11 +14,14 @@ body{
       }      
 
 .nombre__seccion{
-        padding: 30px; 
+        padding: 50px; 
         display: flex;
         justify-content: center;
         align-items: center;
 }
+
+
+
 
 .menu__temporal{
         padding: 50px; 
@@ -35,3 +38,5 @@ body{
         background-size: 50px 50px; */
         background-position:center;
     }
+
+
