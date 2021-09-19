@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-adm.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">    
     <title>InmoVentas</title>
+    
 </head>
-<body>
+<body class="container">
+    
     <header class="secciones__inmo">
         <div class="menu">
-            <img src="/home/fredy/Fredy/Capacitación/MINTIC2022/UTP/Ciclo3/21C3DS61/Unidad 1/InmoVentas/css/Images/Logo.png" alt="">
-            <h2>InmoVentas</h2>
+            <img src="/home/fredy/Fredy/Capacitación/MINTIC2022/UTP/Ciclo3/21C3DS61/Unidad 1/InmoVentas/css/Images/Logo.png" alt="" width="350px">
             <div>
                 <nav class="menuitems">
                     <li>Inicio</li>
@@ -30,54 +31,38 @@
                 <h2>ADMINISTRACIÓN</h2>
                 <form class="row g-3">
                     <div class="col-md-4">
-                      <label for="validationDefault01" class="form-label">First name</label>
-                      <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                      <label for="validationDefault01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validationDefault01" required>
                     </div>
                     <div class="col-md-4">
-                      <label for="validationDefault02" class="form-label">Last name</label>
-                      <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+                      <label for="validationDefault02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validationDefault02" required>
                     </div>
                     <div class="col-md-4">
-                      <label for="validationDefaultUsername" class="form-label">Username</label>
+                      <label for="validationDefaultUsername" class="form-label">Usuario</label>
                       <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend2">@</span>
                         <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <label for="validationDefault03" class="form-label">Password</label>
+                      <label for="validationDefault03" class="form-label">Clave</label>
                       <input type="text" class="form-control" id="validationDefault03" required>
-                    </div>
-                    <!--
-                    <div class="col-md-3">
-                      <label for="validationDefault04" class="form-label">State</label>
-                      <select class="form-select" id="validationDefault04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="col-md-3">
-                      <label for="validationDefault05" class="form-label">Zip</label>
-                      <input type="text" class="form-control" id="validationDefault05" required>
-                    </div>
+                    </div>                    
                     <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                        <label class="form-check-label" for="invalidCheck2">
-                          Agree to terms and conditions
-                        </label>
-                      </div>
-                    </div>
-                -->
-                    <div class="col-12">
-                      <button class="btn btn-primary" type="submit">Submit form</button>
+                      <button id="enviarBtn" class="btn btn-primary" type="submit">Enviar</button>                      
                     </div>
                   </form>
             </section>
         </div>
+        
+    <script src="js/admon.js"></script>
+
     </main>
     <footer>
-
+      <div class="secciones__inmo">
+          <p style="padding: 5%;" >Aquí va el pie de página</p>
+      </div>
     </footer>
     
 </body>
