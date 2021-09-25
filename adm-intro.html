@@ -4,174 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-adm.css">    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <title>InmoVentas - Administración</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-adm.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/iconos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">    
+    
+    <title>InmoVentas</title>
+    
 </head>
-<body class="container">
-    <header class="secciones__inmo">
-        <div class="menu">
-            <img src="/home/fredy/Fredy/Capacitación/MINTIC2022/UTP/Ciclo3/21C3DS61/Unidad 1/InmoVentas/css/Images/Logo.png" alt="" width="350px">
-            <div>
-                <nav class="menuitems">
-                    <li>Inicio</li>
-                    <li>Servicios especiales</li>
-                    <li>Noticias</li>
-                    <li>Administración</li>
-                    <li>About us</li>
-                </nav>
-            </div>        
-        </div>
-    </header>   
+<body class="admon">
+    
+  <header class="secciones__inmo">
+         
+    <nav class="navbar">
+        <a class=navbar-log href="#">
+            <img src="css/Images/admon.png"width="300" >
+        </a>
+    </nav>
+    <nav>
+      <h3>InmoVentas</h3>
+      <ul>
+          <li><a href="#">Menu Principal</a></li>            
+          <li><a href="#">Servicios Especiales <i class="icon ion-md-arrow-dropdown"></i></a>
+              <ul>
+                  <li><a href="#">Especial1</a></li>
+                  <li><a href="#">Especial2</a></li>
+                  <li><a href="#">Especial3</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Noticias<i class="icon ion-md-arrow-dropdown"></i></a>
+              <ul>
+                  <li><a href="#">Noticias1</a></li>
+                  <li><a href="#">Noticias2</a></li>
+                  <li><a href="#">Noticias3</a></li>
+              </ul>
+          <li><a href="#">Administracion<i class="icon ion-md-arrow-dropdown"></i></a>
+              <ul>
+                  <li><a href="#">Administracion1</a></li>
+                  <li><a href="#">Administracion2</a></li>
+                  <li><a href="#">Administracion3</a></li>
+              </ul>
+          
+      </ul>
+    </nav>
+    </header>  
 
     <main>
         <div class="container-md">
-            <section class="admon">                
+            <section class="admon">
+                <h3 class="adm-h3">ADMINISTRACIÓN</h3>                
+                
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <!--Perfiles-->
-                      <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Perfiles</button>
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Perfiles</button>
                     </li>
                     <li class="nav-item" role="presentation">
                       <!--Usuarios-->
-                      <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Usuarios</button>
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Usuarios</button>
                     </li>                    
                 </ul>
                   
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <!--Perfiles-->
                         <form>
-                            <!--
-                            <div class="row mb-3">
-                              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                              <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputEmail3">
-                              </div>
-                            </div>
-                            <div class="row mb-3">
-                              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                              <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3">
-                              </div>
-                            </div>
-                            -->
+                            
                             <div class="seleccion_perfiles container">
                                 <fieldset class="row mb-3">
-                                <legend class="col-form-label col-sm-2 pt-0">Perfil</legend>
-                                <div class="col-sm-10">
-                                    <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
-                                        Oferente de Inmueble
-                                    </label>
+                                    <legend class="col-form-label col-sm-2 pt-0">Perfil</legend>
+                                    <div class="col-sm-10">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Oferente de Inmueble
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Oferente de Servicios
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                            <label class="form-check-label" for="gridRadios3">
+                                                Comprador de Inmuebles
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">                                        
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                                            <label class="form-check-label" for="gridRadios4">
+                                                Comprador de Servicios
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-check">                                    
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                                            <label class="form-check-label" for="gridRadios5">
+                                                Administrador de Noticias
+                                            </label>
+                                        </div>                                    
                                     </div>
-                                    <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Oferente de Servicios
-                                    </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                                        <label class="form-check-label" for="gridRadios3">
-                                        Comprador de Inmuebles
-                                        </label>
-                                    </div>
-                                    <div class="form-check"> <!--<div class="form-check disabled">-->
-                                    <!--<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option4" disabled>-->  
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
-                                    <label class="form-check-label" for="gridRadios4">
-                                        Comprador de Servicios
-                                    </label>
-                                    </div>
-                                    <div class="form-check">                                    
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
-                                        <label class="form-check-label" for="gridRadios5">
-                                        Administrador de Noticias
-                                        </label>
-                                    </div>
-                                </div>
                                 </fieldset>
-                                <!--
-                                <div class="row mb-3">
-                                <div class="col-sm-10 offset-sm-2">
-                                    <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                    <label class="form-check-label" for="gridCheck1">
-                                        Example checkbox
-                                    </label>
-                                    </div>
-                                </div>
-                                </div>
-                                -->
+
                                 <fieldset class="row mb-3">
                                     <legend class="col-form-label col-sm-2 pt-0">Permisos</legend>
                                     <div class="col-sm-10">
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck1">
                                             <label class="form-check-label" for="gridCheck1">
                                                 Permitir la publicación de avisos
                                             </label>
                                         </div>
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck2">
                                             <label class="form-check-label" for="gridCheck2">
                                                 Permitir la edición de avisos
                                             </label>
                                         </div>
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck3">
                                             <label class="form-check-label" for="gridCheck3">
                                                 Permitir la eliminación de avisos
                                             </label>
                                         </div>
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck4">
                                             <label class="form-check-label" for="gridCheck4">
                                                 Permitir la publicación de oferta de servicios
                                             </label>
                                         </div>
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck5">
                                             <label class="form-check-label" for="gridCheck5">
                                                 Permitir la edición de oferta de servicios
                                             </label>
                                         </div>
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck6">
                                             <label class="form-check-label" for="gridCheck6">
                                                 Permitir la eliminación de oferta de servicios
                                             </label>
                                         </div>
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck7">
                                             <label class="form-check-label" for="gridCheck7">
                                                 Permitir la recibir solicitudes sobre oferta de servicios
                                             </label>
                                         </div>
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck8">
                                             <label class="form-check-label" for="gridCheck8">
                                                 Permitir contactar a oferentes de inmuebles
                                             </label>
                                         </div>
+
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="gridCheck9">
                                             <label class="form-check-label" for="gridCheck9">
                                                 Permitir contactar a oferentes de servicios
                                             </label>
-                                        </div>
+                                        </div>                                        
                                     </div>
                                 </fieldset>
                             </div>
                             <button type="submit" class="btn btn-primary">Definir</button>
-                        </form>                     
-
-
-
+                        </form>
                     </div>
-                    <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                         <!--Usuarios-->                        
                         <form class="row g-3">
                             <div class="col-md-4">
@@ -205,18 +221,19 @@
                                 <input type="text" class="form-control" id="validationDefault04" required>
                             </div>
                             <div class="col-md-12">
-                                <div class="dropdown">
+                                <label for="seleccionPerfil" class="form-label"></label>
+                                <div class="dropdown">                                    
                                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Seleccione el perfil
+                                        Seleccione el perfil
                                     </a>                              
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="seleccionPerfil">
                                     <li><a class="dropdown-item" href="#">Oferente de Inmueble</a></li>
                                     <li><a class="dropdown-item" href="#">Oferente de Servicios</a></li>
                                     <li><a class="dropdown-item" href="#">Comprador de Inmuebles</a></li>
                                     <li><a class="dropdown-item" href="#">Comprador de Servicios</a></li>
                                     <li><a class="dropdown-item" href="#">Administrador de Noticias</a></li>
                                     </ul>
-                                </div>
+                                </div>                                
                             </div>
 
                             <div class="col-12">
@@ -232,10 +249,69 @@
     </main>
     
     <footer>
-        <div class="secciones__inmo">
-            <p style="padding: 5%;" >Aquí va el pie de página</p>
+        <div class="container-footer-all">   
+  
+        <div class="container-body">
+            <div class="colum1">
+                <h1> Mas Información de InmoVentas </h1>
+                <p>Esta empresa se dedica a la comercialización de inmuebles nuevos y usados 
+                    prestando orientación  y la mejor opción del mercado para el distrute del
+                    mejor hogar para su familia </p>
+            </div>
+  
+            <div class="colum2">
+                <h1> Redes Sociales </h1>
+                <div class="row">
+                    <img src="css/imagenes/facebook.png" >
+                    <label>Siguenos en Facebook</label>
+                </div>
+                <div class="row">
+                    <img src="css/imagenes/twitter.png">
+                    <label>Siguenos en Twitter</label>
+                </div>
+                <div class="row">
+                    <img src="css/imagenes/instagram.png">
+                    <label>Siguenos en Instagram</label>
+                </div>
+                <div class="row">
+                    <img src="css/imagenes/linkedin.png">
+                    <label>Siguenos en LinkedIn</label>
+                </div>
+                <div class="row">
+                    <img src="css/imagenes/pinterest.png">
+                    <label>Siguenos en Pinteres</label>
+                </div>                
+            </div>
+            <div class="colum3">
+                <h1>Información de Contacto</h1>
+                <div class="row2">
+                    <img src="css/imagenes/contacto36.png">
+                    <label>Bogotá Colombia carrera 150 # 19 21 Carlos Giraldo </label>
+                </div>
+                <div class="row2">
+                    <img src="css/imagenes/quejar36.png">
+                    <label>+57-6011234567890 </label>
+                </div>
+                <div class="row2">
+                    <img src="css/imagenes/correo36.png">
+                    <label>gerenciainmoventas@inmoventas.com.co </label>
+                </div>
+            </div>       
+         </div>
         </div>
+        </div>
+        <div class="container-footer">
+            <div class="footer">
+                <div class="copyright">
+                     © 2021 Todos los derechos reservados | <a href=""> Imnoventas </a>
+                </div>
+                <div class="information">
+                    <a href=""> Informacion de la compañia </a> |
+                    <a href=""> Privacidad y politicas </a> |
+                    <a href=""> Terminos y Condiciones </a>
+                </div>
+            </div>
     </footer>
-
-</body>
-</html>
+      
+  </body>
+  </html>
