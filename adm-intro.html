@@ -222,7 +222,7 @@
                             </div>
                             <div class="col-md-12">
                                 <label for="seleccionPerfil" class="form-label"></label>
-                                <div class="dropdown">                                    
+                                <!-- <div class="dropdown">                                    
                                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                         Seleccione el perfil
                                     </a>                              
@@ -233,7 +233,47 @@
                                     <li><a class="dropdown-item" href="#">Comprador de Servicios</a></li>
                                     <li><a class="dropdown-item" href="#">Administrador de Noticias</a></li>
                                     </ul>
-                                </div>                                
+                                </div>                                 -->
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label col-sm-2 pt-0">Perfil</legend>
+                                    <div class="col-sm-10">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Oferente de Inmueble
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Oferente de Servicios
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                            <label class="form-check-label" for="gridRadios3">
+                                                Comprador de Inmuebles
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">                                        
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                                            <label class="form-check-label" for="gridRadios4">
+                                                Comprador de Servicios
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-check">                                    
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                                            <label class="form-check-label" for="gridRadios5">
+                                                Administrador de Noticias
+                                            </label>
+                                        </div>                                    
+                                    </div>
+                                </fieldset>
                             </div>
 
                             <div class="col-12">
@@ -246,6 +286,8 @@
             </section>
         </div>
         
+        <script src="js/admon.js"></script>
+
     </main>
     
     <footer>
